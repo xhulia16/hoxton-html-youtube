@@ -112,8 +112,15 @@ display: grid;
     grid-area: header__right;
 }
 
-.left-menu__first{
+.left-menu__first,
+.left-menu__second{
     display: grid;
     padding: 30px;
     border-bottom: 0.5px solid rgb(216, 216, 216);
+}
+
+.left-menu__list{
+    display: grid;
+    grid-row-gap: 15px;
+
 }
