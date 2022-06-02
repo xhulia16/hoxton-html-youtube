@@ -11,9 +11,9 @@ body {
 
     grid-template:
         "header    header  header" 60px
-        "left-menu rec-genres   rec-genres" 50px
-        "left-menu    yt-videos  yt-videos" auto/
-        200px 500px auto;
+        "left-menu rec-genres   rec-genres" 60px
+        "left-menu    yt-videos  yt-videos" 1fr/
+        200px 200px auto;
 }
 
 .header {
