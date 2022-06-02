@@ -13,27 +13,35 @@
 
 <body>
     <section class="header">
-        <div>
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </div>
-        <div>
-            <img src="./items/yt_icon.png" alt="youtube logo" class="yt-logo" />
+        <div class="header__left">
+            <div>
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+            <div>
+                <img src="./items/yt_icon.png" alt="youtube logo" class="yt-logo" />
+            </div>
         </div>
         <div class="header-search">
-            <form action="">
-                <input type="search" />
+            <div class="header-search__button">
+                <div>
+                    <form action="">
+                        <input type="search" class="header-search_input" placeholder="Search" />
+                    </form>
+                </div>
+                <div>
+                    <button>
+                        <img src="./items/search-icon.PNG" alt="search button" class="search-button">
+                    </button>
+                </div>
+            </div>
+            <div>
                 <button>
-                    <span class="material-symbols-outlined">
-                        search
-                    </span>
+                    <img src="./items/mic-icon.PNG" alt="mic" class="mic-button">
                 </button>
-            </form>
+            </div>
         </div>
-        <span class="material-symbols-outlined">
-            mic
-        </span>
         <span class="material-symbols-outlined">
             video_call
         </span>
