@@ -7,29 +7,30 @@
 body{
     min-height: 100vh;
     display: grid;
-    border: 2px solid black;
+    
+ grid-template:
+ "header    header  header"     50px
+ "left-menu rec-genres   rec-genres" 50px
+ "left-menu    yt-videos  yt-videos"   1fr/
+   200px     1fr   1fr;
 }
 
-section{
-    border: 2px solid black;
-    display:grid;
-}
-.main_page{
-    display: grid;
-    grid-auto-flow: column;
-}
-div{
-    display: grid;
-    border: 1px solid black;
-    grid-auto-flow: column;
+.header{
+    background-color: brown;
+    grid-area: header;
 }
 
 .left-menu{
-    display: grid;
-    grid-auto-flow: row;
+    background-color: blue;
+    grid-area: left-menu;
 }
 
-.main_page_right{
-    display: grid;
-    grid-auto-flow: row;
+.rec-genres{
+    background-color: aqua;
+    grid-area: rec-genres;
+}
+
+.yt-videos{
+    background-color: blueviolet;
+    grid-area: yt-videos;
 }
