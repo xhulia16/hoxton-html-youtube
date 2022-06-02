@@ -97,8 +97,21 @@ button{
 }
 
 .rec-genres {
-    background-color: aqua;
     grid-area: rec-genres;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 20px;
+    place-items: center;
+    border-top: 0.5px solid rgb(216, 216, 216);
+    border-bottom: 0.5px solid rgb(216, 216, 216);
+}
+
+.rec-genres__links{
+    border: 1px solid rgba(155, 154, 154, 0.233);
+    font-size: small;
+    padding: 8px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
 }
 
 .yt-videos {
