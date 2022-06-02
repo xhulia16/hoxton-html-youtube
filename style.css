@@ -115,7 +115,7 @@ button{
 }
 
 .yt-videos {
-    background-color: blueviolet;
+    background-color: rgb(249,249,249);
     grid-area: yt-videos;
 }
 
@@ -139,4 +139,48 @@ display: grid;
     display: grid;
     grid-row-gap: 15px;
 
+}
+
+.yt-videos{
+    display: grid;
+    grid-template:
+        "video1 video2 video3 video4" 0.5fr
+        "video5 video6 video7 video8" 0.5fr/
+        0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-gap: 15px;
+    padding: 20px;
+
+}
+.video1{
+    grid-area: video1;
+    background-color: blue;
+}
+.video2{
+    grid-area: video2;
+    background-color: rgb(60, 60, 226);
+}
+.video3{
+    grid-area: video3;
+    background-color: rgb(165, 165, 165);
+}
+.video4{
+    grid-area: video4;
+    background-color: rgb(17, 175, 141);
+}
+.video5{
+    grid-area: video5;
+    background-color: rgb(47, 139, 11);
+}
+
+.video6{
+    grid-area: video6;
+    background-color: rgba(221, 39, 39, 0.61);
+}
+.video7{
+    grid-area: video7;
+    background-color: rgb(211, 46, 123);
+}
+.video8{
+    grid-area: video8;
+    background-color: rgba(185, 72, 134, 0.507);
 }
