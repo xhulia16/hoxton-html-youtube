@@ -200,7 +200,12 @@ display: grid;
 .yt-videos__user{
     display: grid;
     grid-auto-flow: column;
-    align-items: center;
+    height: min-content;
+    place-items: center;
+    justify-content: left;
+    grid-gap: 10px;
+    padding-top: 10px;
+    
 }
 .yt-videos__user-profile{
     border-radius: 50%;
@@ -208,13 +213,17 @@ display: grid;
 }
 .yt-videos__title{
     display: grid;
-    align-items: center;
+    height: min-content;
+    font-size: 15px;
+    font-family: "Roboto","Arial",sans-serif;
+    color: #030303;
 }
 .yt-videos__details{
-    padding-left: 55px;
+    padding-left: 50px;
     display: grid;
-
-    font-size: smaller;
+    font-size: 15px;
+    grid-gap: 5px;
+    color: rgb(68, 67, 67);
 }
 
 .yt-videos__description{
