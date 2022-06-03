@@ -188,8 +188,7 @@ display: grid;
 .video1{
     display: grid;
     grid-auto-flow: row;
-    grid-gap: 10px;
-
+   
 }
 
 .thumbnail1{
@@ -202,6 +201,7 @@ display: grid;
 .yt-videos__user{
     display: grid;
     grid-auto-flow: column;
+    align-items: center;
 }
 .yt-videos__user-profile{
     border-radius: 50%;
@@ -210,4 +210,15 @@ display: grid;
 .yt-videos__title{
     display: grid;
     align-items: center;
+}
+.yt-videos__details{
+    padding-left: 20px;
+    display: grid;
+    place-items: center;
+    font-size: smaller;
+}
+
+.yt-videos__description{
+display: grid;
+grid-auto-flow: row;
 }
