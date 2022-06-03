@@ -153,7 +153,6 @@ display: grid;
 }
 .video1{
     grid-area: video1;
-    background-color: blue;
 }
 .video2{
     grid-area: video2;
@@ -212,9 +211,9 @@ display: grid;
     align-items: center;
 }
 .yt-videos__details{
-    padding-left: 20px;
+    padding-left: 55px;
     display: grid;
-    place-items: center;
+
     font-size: smaller;
 }
 
