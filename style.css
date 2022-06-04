@@ -156,35 +156,42 @@ display: grid;
 }
 .video2{
     grid-area: video2;
-    background-color: rgb(60, 60, 226);
+    
 }
 .video3{
     grid-area: video3;
-    background-color: rgb(165, 165, 165);
+   
 }
 .video4{
     grid-area: video4;
-    background-color: rgb(17, 175, 141);
+   
 }
 .video5{
     grid-area: video5;
-    background-color: rgb(47, 139, 11);
+   ;
 }
 
 .video6{
     grid-area: video6;
-    background-color: rgba(221, 39, 39, 0.61);
+   
 }
 .video7{
     grid-area: video7;
-    background-color: rgb(211, 46, 123);
+    
 }
 .video8{
     grid-area: video8;
-    background-color: rgba(185, 72, 134, 0.507);
+    
 }
 
-.video1{
+.video1,
+.video2,
+.video3,
+.video4,
+.video5,
+.video6,
+.video7,
+.video8{
     display: grid;
     grid-auto-flow: row;
    
