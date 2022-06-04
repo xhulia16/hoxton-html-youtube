@@ -1,29 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto","Arial",sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100%;
     display: grid;
 
     grid-template:
-        "header    header  header" 60px
-        "left-menu rec-genres   rec-genres" 60px
-        "left-menu    yt-videos  yt-videos" 1fr/
-        250px 200px auto;
+        "header    header  header header" 60px
+        "left-menu rec-genres   rec-genres rec-genres" 60px
+        "left-menu    yt-videos  yt-videos yt-videos" auto/
+        250px 200px 200px auto;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
+
 .header {
     background-color: white;
     grid-area: header;
@@ -31,49 +32,54 @@ ul{
     grid-auto-flow: column;
     align-items: center;
     grid-template:
-    "header__left header-search header__right"/
-    300px 850px 1fr;
+        "header__left header-search header__right" /
+        300px 850px 1fr;
 
 }
-.header__left{
-display: grid;
-width: min-content;
-grid-auto-flow: column;
-grid-column-gap: 20px;
-padding-left: 30px;
-grid-area: header__left;
+
+.header__left {
+    display: grid;
+    width: min-content;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    padding-left: 30px;
+    grid-area: header__left;
 
 }
-.header-search__button{
+
+.header-search__button {
     display: grid;
     grid-auto-flow: column;
 }
-.header-search_input{
-    width:600px;
+
+.header-search_input {
+    width: 600px;
     height: 42px;
     border: 1px solid rgb(223, 223, 223);
- font-family: sans-serif;
- font-size: medium;
+    font-family: sans-serif;
+    font-size: medium;
 
 }
-.header-search{
+
+.header-search {
     display: grid;
-grid-auto-flow: column;
-width: 50px;
-grid-column-gap: 8px;
-grid-area: header-search;
+    grid-auto-flow: column;
+    width: 50px;
+    grid-column-gap: 8px;
+    grid-area: header-search;
 }
 
-button{
-    border:none;
+button {
+    border: none;
     background-color: white;
 }
-.search-button{
+
+.search-button {
     height: 42px;
     border: 1px solid rgb(223, 223, 223);
 }
 
-.mic-button{
+.mic-button {
     border: none;
     height: 40px;
 }
@@ -93,7 +99,8 @@ button{
     grid-area: left-menu;
     margin-right: 10px;
     overflow: scroll;
-    height: 580px;
+    overflow-x: hidden;
+    height: 590px;
 }
 
 .rec-genres {
@@ -106,7 +113,7 @@ button{
     border-bottom: 0.5px solid rgb(216, 216, 216);
 }
 
-.rec-genres__links{
+.rec-genres__links {
     border: 1px solid rgba(155, 154, 154, 0.233);
     font-size: small;
     padding: 8px;
@@ -115,73 +122,80 @@ button{
 }
 
 .yt-videos {
-    background-color: rgb(249,249,249);
+    background-color: rgb(249, 249, 249);
     grid-area: yt-videos;
 }
 
-.header__right{
-display: grid;
+.header__right {
+    display: grid;
     grid-auto-flow: column;
     place-items: center;
-    width:200px;
+    width: 200px;
     grid-area: header__right;
 }
 
 .left-menu__first,
 .left-menu__second,
-.left-menu__third{
+.left-menu__third {
     display: grid;
     padding: 30px;
     border-bottom: 0.5px solid rgb(216, 216, 216);
 }
 
-.left-menu__list{
+.left-menu__list {
     display: grid;
     grid-row-gap: 15px;
 
 }
 
-.yt-videos{
+.yt-videos {
     display: grid;
     grid-template:
-    "video1 video2 video3 video4" 50%
-    "video5 video6 video7 video8" 50%/
-    25% 25% 25% 25%;
+        "video1 video2 video3 video4" 47%
+        "video5 video6 video7 video8" 47%/
+        24% 24% 24% 24%;
     grid-gap: 15px;
-    padding: 20px;
+    padding: 15px;
 
 }
-.video1{
+
+.video1 {
     grid-area: video1;
 }
-.video2{
+
+.video2 {
     grid-area: video2;
-    
-}
-.video3{
-    grid-area: video3;
-   
-}
-.video4{
-    grid-area: video4;
-   
-}
-.video5{
-    grid-area: video5;
-   ;
+
 }
 
-.video6{
+.video3 {
+    grid-area: video3;
+
+}
+
+.video4 {
+    grid-area: video4;
+
+}
+
+.video5 {
+    grid-area: video5;
+    ;
+}
+
+.video6 {
     grid-area: video6;
-   
+
 }
-.video7{
+
+.video7 {
     grid-area: video7;
-    
+
 }
-.video8{
+
+.video8 {
     grid-area: video8;
-    
+
 }
 
 .video1,
@@ -191,20 +205,21 @@ display: grid;
 .video5,
 .video6,
 .video7,
-.video8{
+.video8 {
     display: grid;
     grid-auto-flow: row;
-   
+
 }
 
-.thumbnail1{
-    width: 100%; /* or any custom size */
-    height: 100%; 
+.thumbnail1 {
+    width: 100%;
+    /* or any custom size */
+    height: 100%;
     object-fit: fill;
     place-content: top;
 }
 
-.yt-videos__user{
+.yt-videos__user {
     display: grid;
     grid-auto-flow: column;
     height: min-content;
@@ -212,28 +227,31 @@ display: grid;
     grid-gap: 10px;
     padding-top: 15px;
 }
-.yt-videos__user-profile{
+
+.yt-videos__user-profile {
     border-radius: 50%;
     width: 40px;
 }
-.yt-videos__title{
+
+.yt-videos__title {
     display: grid;
     height: min-content;
-    font-size: 15px;
-    font-family: "Roboto","Arial",sans-serif;
+    font-size: 13.5px;
+    font-family: "Roboto", "Arial", sans-serif;
     color: #030303d0;
     padding-top: 5px;
 }
-.yt-videos__details{
+
+.yt-videos__details {
     padding-left: 50px;
     display: grid;
-    font-size: 15px;
+    font-size: 14px;
     grid-gap: 5px;
     color: rgba(68, 67, 67, 0.842);
 }
 
-.yt-videos__description{
-display: grid;
-grid-auto-flow: row;
-height: min-content;
+.yt-videos__description {
+    display: grid;
+    grid-auto-flow: row;
+    height: min-content;
 }
